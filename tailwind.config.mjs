@@ -7,9 +7,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        lucida: ["Lucida Bright", "serif"],
+        spectral: ["Spectral SC", "serif"],
+        nunito: ["var(--font-nunito)"],
+        geistSans: ["var(--font-geist-sans)"],
+        geistMono: ["var(--font-geist-mono)"],
       },
     },
   },
