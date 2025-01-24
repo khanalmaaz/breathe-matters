@@ -1,3 +1,139 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.hero_bottom {
+  width: 100%;
+  height: 152px;
+  background: linear-gradient(180deg, #008080 0%, #001a1a 143.38%);
+}
+.hidden_heading {
+  color: var(--Black, #101010);
+  font-family: "Spectral SC";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.captotrainer {
+  background: url("./assets/Capno.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.capno_para {
+  color: #3c3c3c;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+}
+
+.highlight {
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 6px;
+  border-radius: 8px;
+  background: #e6f2f2;
+}
+
+.highlight_para {
+  color: var(--Teal, #008080);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card {
+  box-shadow: 0px 39px 11px rgba(0, 0, 0, 0), 0px 25px 10px rgba(0, 0, 0, 0.01),
+    0px 14px 8px rgba(0, 0, 0, 0.05), 0px 6px 6px rgba(0, 0, 0, 0.09),
+    0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.frameParent {
+  background: url("./assets/Breathepatterns1.png") no-repeat top right;
+}
+
+@media (max-width: 1100px) {
+  .frameParentBottom {
+    background: url("./assets/Breathepatterns1.png") no-repeat bottom;
+  }
+}
+
+.section {
+  display: flex;
+  width: 368px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+.howTheCapnotrainer {
+  color: var(--Black, #101010);
+  font-family: "Spectral SC";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.diff_para {
+  color: #3c3c3c;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text_diff {
+  box-shadow: 0px 542.169px 151.451px 0px rgba(0, 0, 0, 0),
+    0px 347.446px 138.724px 0px rgba(0, 0, 0, 0.01),
+    0px 194.723px 117.088px 0px rgba(0, 0, 0, 0.05),
+    0px 86.543px 86.543px 0px rgba(0, 0, 0, 0.09),
+    0px 21.636px 47.09px 0px rgba(0, 0, 0, 0.1);
+}
+
+.diffTheCapnotrainer {
+  color: var(--Black, #101010);
+  font-family: "Spectral SC";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.transform {
+  background: radial-gradient(50% 50% at 50% 50%, #008080 0%, #035c5c 100%);
+  border-radius: 10px;
+}
+
+.footer-desc {
+  display: flex;
+  align-items: center;
+  color: rgba(16, 16, 16, 0.6);
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rectangle_right {
+  background: url("./assets/Rectangle-right.png");
+}
+.rectangle_black {
+  background: url("./assets/Rectangle-right-2.png");
+}

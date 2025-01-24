@@ -1,14 +1,16 @@
 import React from "react";
 import Header from "../header.js";
 import Wrapper from "../wrapper/index.js";
+import fegrtg1 from "../../assets/fegrtg1.png";
+import Image from "next/image.js";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-[#6BB5B5] to-[#008080] h-screen w-full">
+    <div className="bg-gradient-to-b from-[#6BB5B5] to-[#008080] w-full  flex flex-col md:gap-20 ">
       <Wrapper>
         <Header />
-        <div className=" mt-7">
-          <h1 className="text-white font-spectral uppercase text-[40px] font-bold leading-normal tracking-wide   ">
+        <div className="mt-7 relative flex flex-col gap-12">
+          <h1 className="text-white font-spectral uppercase md:text-[40px] text-[30px] font-bold md:leading-normal leading-8 tracking-wide">
             <span>
               Transform Your Life with the Revolutionary CapnoTrainer® GO
             </span>
@@ -41,12 +43,11 @@ const Hero = () => {
               </svg>
             </span>
           </h1>
-
-          <div>
-            <span className="text-white font-nunito text-[36px] font-bold leading-none">
+          <div className="">
+            <span className="text-white font-nunito md:text-[36px] text-[26px] font-bold leading-none">
               Breathe Smarter, Live Better
             </span>
-            <p className="text-white font-nunito text-[16px] font-normal leading-none">
+            <p className="text-white font-nunito md:text-[16px] text-[12px] font-normal leading-none xl:w-[60%]">
               Breathing is more than just an unconscious action—it’s a
               foundation of health, performance, and emotional well-being. But
               what if your breathing habits are silently holding you back? Enter
@@ -55,8 +56,15 @@ const Hero = () => {
               and transform your life.
             </p>
           </div>
+          <Image
+            src={fegrtg1}
+            alt="fegrtg1.png"
+            className="xl:absolute top-12 -right-40"
+          />
         </div>
       </Wrapper>
+
+      <div className="hero_bottom"></div>
     </div>
   );
 };

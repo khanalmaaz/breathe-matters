@@ -9,7 +9,7 @@ export default {
     extend: {
       fontFamily: {
         lucida: ["Lucida Bright", "serif"],
-        spectral: ["Spectral SC", "serif"],
+        spectral: "var(--font-spectral-sc)",
         nunito: ["var(--font-nunito)"],
         geistSans: ["var(--font-geist-sans)"],
         geistMono: ["var(--font-geist-mono)"],
