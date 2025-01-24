@@ -52,8 +52,8 @@ const Order = () => {
               Invest in the Science of Better Breathing
             </p>
             <p className="font-nunito break-words text-white text-end">
-              For a limited time, get your CapnoTrainer<sup>®</sup>GO at an exclusive
-              launch price!
+              For a limited time, get your CapnoTrainer<sup>®</sup>GO at an
+              exclusive launch price!
             </p>
           </div>
           <div
@@ -84,7 +84,7 @@ const Order = () => {
         </div>
       </div>
 
-      <div className="max-lg:flex max-lg:flex-col hidden bg-[#008080] py-10">
+      <div className="max-lg:flex max-lg:flex-col hidden bg-[#008080] py-10 px-5">
         <h2
           className="text-center max-md:text-[26px] diffTheCapnotrainer "
           style={{
@@ -98,8 +98,8 @@ const Order = () => {
             Invest in the Science of Better Breathing
           </p>
           <p class="font-nunito break-words text-white">
-            For a limited time, get your CapnoTrainer<sup>®</sup>GO at an exclusive launch
-            price!
+            For a limited time, get your CapnoTrainer<sup>®</sup>GO at an
+            exclusive launch price!
           </p>
           <div
             className="p-5 inline-flex items-center justify-center relative"

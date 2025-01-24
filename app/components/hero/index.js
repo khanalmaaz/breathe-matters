@@ -11,13 +11,13 @@ const Hero = () => {
       <Wrapper>
         <Header />
         <div className="mt-7 relative flex flex-col gap-12">
-          <h1 className="text-white font-spectral uppercase md:text-[32px] text-[40px] font-bold md:leading-normal leading-8 tracking-wider">
+          <h1 className="text-white font-spectral uppercase md:text-[32px] max-md:text-[30px] text-[40px] font-bold md:leading-normal leading-8 tracking-wider">
             <span>
-              <span className="text-[40px]">T</span>ransform{" "}
-              <span className="text-[40px]">Y</span>our{" "}
-              <span className="text-[40px]">L</span>ife with the{" "}
-              <span className="text-[40px]">R</span>evolutionary{" "}
-              <span className="text-[40px]">C</span>apnoTrainer<sup>®</sup> GO
+              <span className="max-md:text-[30px] text-[40px]">T</span>ransform{" "}
+              <span className="max-md:text-[30px] text-[40px]">Y</span>our{" "}
+              <span className="max-md:text-[30px] text-[40px]">L</span>ife with the{" "}
+              <span className="max-md:text-[30px] text-[40px]">R</span>evolutionary{" "}
+              <span className="max-md:text-[30px] text-[40px]">C</span>apnoTrainer<sup>®</sup> GO
             </span>
             <span className="ml-2 inline-flex">
               <svg

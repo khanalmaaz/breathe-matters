@@ -13,20 +13,20 @@ const highlights = [
 
 const CapnoTrainer = () => {
   return (
-    <div className="w-full relative px-12">
+    <div className="w-full relative md:px-12">
       <div className="lg:w-[75%] max-lg:gap-5 w-full flex max-lg:flex-col items-center max-md:my-32 my-10 px-10">
         <div>
           <div className="flex flex-col items-start text-[#008080] text-center sm:text-left">
-            <h2 className="text-[40px] font-bold flex items-center font-spectral justify-between gap-5">
+            <h2 className="max-md:text-[30px] text-[40px] font-bold flex items-center font-spectral justify-between gap-5">
               WHAT IS THE
               <Image src={group3} alt="...group" />
             </h2>
-            <h2 className="text-[50px] font-bold font-spectral">
+            <h2 className="text-[40px] max-md:text-[30px] font-bold font-spectral">
               CAPNOTRAINER<sup>®</sup> GO?
             </h2>
           </div>
 
-          <p className=" md:w-[528px] text-[#3C3C3C] text-[16px] text-center font-nunito leading-normal font-normal sm:text-left">
+          <p className=" md:w-[528px] text-[#3C3C3C]  text-[16px] text-center font-nunito leading-normal font-normal sm:text-left">
             The CapnoTrainer
             <sup>®</sup>
             GO isn’t just a tool—it’s your personal gateway to a healthier, more

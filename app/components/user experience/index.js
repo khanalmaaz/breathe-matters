@@ -36,7 +36,7 @@ const UserExp = () => {
             <p className="text-[16.331px] text-left font-bold font-spectral leading-normal tracking-wider uppercase">
               Experience the
             </p>
-            <h2 className="text-[40px] text-[#008080] max-md:text-center font-spectral font-bold leading-[25px] uppercase">
+            <h2 className="max-md:text-[30px] text-[40px] text-[#008080] max-md:text-center font-spectral font-bold leading-[25px] uppercase">
               Power of CapnoTrainer<sup>®</sup> GO
             </h2>
           </div>

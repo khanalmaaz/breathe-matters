@@ -44,7 +44,7 @@ const KeyFeatures = () => {
             <h3 className="text-[16px] font-bold text-[#101010] leading-normal font-nunito">
               {obj?.title}
             </h3>
-            <p className="text-[#3C3C3C] font-[400] leading-normal text-[16px]">
+            <p className="text-[#3C3C3C] font-[400] leading-normal text-[16px] max-md:text-center">
               {obj?.subtitle}
             </p>
           </div>
