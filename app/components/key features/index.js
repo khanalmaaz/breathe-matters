@@ -41,10 +41,12 @@ const KeyFeatures = () => {
         {keyFeaturesData?.map((obj, index) => (
           <div key={index} className="flex flex-col gap-2 max-md:items-center">
             <Image src={obj?.icons} alt={`...${obj.name}`} />
-            <h3 className="text-[16px] font-bold text-[#101010]">
+            <h3 className="text-[16px] font-bold text-[#101010] leading-normal font-nunito">
               {obj?.title}
             </h3>
-            <p className="tex-[#3C3C3C] font-[400]">{obj?.subtitle}</p>
+            <p className="text-[#3C3C3C] font-[400] leading-normal text-[16px]">
+              {obj?.subtitle}
+            </p>
           </div>
         ))}
       </div>

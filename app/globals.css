@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-nunito: "Nunito", sans-serif;
+  --font-geist-sans: "Geist", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+  --font-spectral-sc: "Spectral SC", serif;
+}
+
+body {
+  font-family: var(--font-nunito);
+}
+
+.font-lucida {
+  font-family: "Lucida Bright", serif;
+  font-weight: 600;
+}
+
 body {
   margin: 0;
   line-height: normal;
@@ -92,7 +108,6 @@ body {
 
 .diff_para {
   color: #3c3c3c;
-  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -109,7 +124,7 @@ body {
 .diffTheCapnotrainer {
   color: var(--Black, #101010);
   font-family: "Spectral SC";
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -120,20 +135,25 @@ body {
   border-radius: 10px;
 }
 
-.footer-desc {
-  display: flex;
-  align-items: center;
-  color: rgba(16, 16, 16, 0.6);
-  font-family: Nunito;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .rectangle_right {
   background: url("./assets/Rectangle-right.png");
 }
 .rectangle_black {
   background: url("./assets/Rectangle-right-2.png");
+}
+
+.takeControl {
+  color: var(--White, #fff);
+  text-align: right;
+  font-family: "Spectral SC";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 3.68px;
+  text-underline-offset: 8.463px;
+  text-underline-position: from-font;
 }

@@ -11,7 +11,11 @@ const Order = () => {
   return (
     <>
       <div className="flex items-center justify-between relative max-lg:hidden">
-        <Image src={person1} alt="...person1" className="absolute left-10" />
+        <Image
+          src={person1}
+          alt="...person1"
+          className="absolute left-24 bottom-0"
+        />
         <Image
           src={semiCircle}
           alt="...semiCircle"
@@ -34,26 +38,21 @@ const Order = () => {
         />
         <div className="md:w-[30%] rectangle_left relative bg-red-400"></div>
         <div
-          className="md:w-[75%] rectangle_right bg-cover bg-center bg-no-repeat flex flex-col  gap-10"
+          className="md:w-[75%] rectangle_right bg-cover bg-center bg-no-repeat flex flex-col gap-20"
           style={{
             alignItems: "end",
-            paddingRight: "40px",
+            paddingRight: "80px",
           }}
         >
-          <h2 className="text-[73px] font-spectral font-bold text-white text-end break-words underline decoration-wavy decoration-2 underline-offset-[11.5%]">
+          <h2 className="takeControl tracking-widest text-[50px] font-spectral font-bold text-white text-end break-words underline decoration-wavy decoration-2 underline-offset-[11.5%]">
             Take Control of Your Breath Today!
           </h2>
-          <div
-            className="flex flex-col items-start "
-            style={{
-              paddingRight: "40px",
-            }}
-          >
+          <div className="flex flex-col items-start ">
             <p className="font-nunito break-words text-white text-center">
               Invest in the Science of Better Breathing
             </p>
             <p className="font-nunito break-words text-white text-end">
-              For a limited time, get your CapnoTrainer®GO at an exclusive
+              For a limited time, get your CapnoTrainer<sup>®</sup>GO at an exclusive
               launch price!
             </p>
           </div>
@@ -99,7 +98,7 @@ const Order = () => {
             Invest in the Science of Better Breathing
           </p>
           <p class="font-nunito break-words text-white">
-            For a limited time, get your CapnoTrainer®GO at an exclusive launch
+            For a limited time, get your CapnoTrainer<sup>®</sup>GO at an exclusive launch
             price!
           </p>
           <div

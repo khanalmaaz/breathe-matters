@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        nunito: "var(--font-nunito)",
+        geist: "var(--font-geist-sans)",
+        geistMono: "var(--font-geist-mono)",
+        spectralSC: "var(--font-spectral-sc)",
         lucida: ["Lucida Bright", "serif"],
-        spectral: "var(--font-spectral-sc)",
-        nunito: ["var(--font-nunito)"],
-        geistSans: ["var(--font-geist-sans)"],
-        geistMono: ["var(--font-geist-mono)"],
       },
     },
   },

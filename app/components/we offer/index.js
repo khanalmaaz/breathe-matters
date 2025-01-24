@@ -41,8 +41,8 @@ const weOfferData = [
 const WeOffer = () => {
   return (
     <div className="my-10 max-md:my-16">
-      <h2 className="text-center max-md:text-[26px] diffTheCapnotrainer">
-        Who Is the CapnoTrainer® GO For?
+      <h2 className="text-center max-md:text-[26px] mb-10 tracking-wider diffTheCapnotrainer">
+        Who Is the CapnoTrainer<sup>®</sup> GO For?
       </h2>
       <div className="grid grid-cols-3 gap-6  max-lg:grid-cols-1">
         {weOfferData.slice(0, 3).map((obj, index) => (

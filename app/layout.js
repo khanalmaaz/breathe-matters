@@ -4,7 +4,7 @@ import "./globals.css";
 const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700"],
 });
 
 const geistSans = Geist({
@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 const spectralSC = Spectral_SC({
   variable: "--font-spectral-sc",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700"],
 });
 
 export const metadata = {

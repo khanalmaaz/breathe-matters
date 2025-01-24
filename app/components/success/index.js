@@ -9,14 +9,14 @@ const Success = () => {
       name: "Amanda K",
       role: "Entrepreneur",
       quote:
-        '"I thought I knew how to breathe—until I used the CapnoTrainer® GO. This device opened my eyes to habits I never realized were harming me. I feel more energized and focused than ever before!"',
+        '"I thought I knew how to breathe—until I used the CapnoTrainer<sup>®</sup> GO. This device opened my eyes to habits I never realized were harming me. I feel more energized and focused than ever before!"',
     },
     {
       image: customer2,
       name: "Dr. Michael J",
       role: "Clinical Psychologist",
       quote:
-        '"As a therapist, the CapnoTrainer®GO has completely transformed how I work with clients. It\'s a game-changer in helping people tackle anxiety and performance issues."',
+        '"As a therapist, the CapnoTrainer<sup>®</sup>GO has completely transformed how I work with clients. It\'s a game-changer in helping people tackle anxiety and performance issues."',
     },
   ];
 
@@ -79,8 +79,8 @@ const Success = () => {
         </>
       ))}
 
-      <p className="text-center max-md:text-[26px] font-bold text-[40px] font-spectral text-black">
-        Real Success Stories
+      <p className="text-center max-md:text-[26px] leading-normal text-[40px] font-spectral font-bold text-black mt-5">
+        REAL SUCCESS STORIES
       </p>
     </div>
   );

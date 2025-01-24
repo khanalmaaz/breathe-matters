@@ -37,11 +37,9 @@ const Home = () => {
         <WhatWeCanDo />
       </Wrapper>
       <Order />
-      <Wrapper>
-        <FAQ />
-        <Transform />
-        <Footer />
-      </Wrapper>
+      <FAQ />
+      <Transform />
+      <Footer />
     </div>
   );
 };

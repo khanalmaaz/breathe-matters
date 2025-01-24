@@ -12,7 +12,7 @@ const UserExp = () => {
       title: "See Your Breathing in Action",
       description:
         "Gain an immediate understanding of your breathing patterns. See how each breath impacts your health and performance with clear, dynamic visuals.",
-      imageSrc: feedback,
+      imageSrc: waveform,
     },
     {
       title: "Monitor Your Progress",
@@ -24,7 +24,7 @@ const UserExp = () => {
       title: "Receive Tailored Feedback",
       description:
         "Get personalized feedback to improve your breathing. Practical exercises help realign your breath for optimal benefits.",
-      imageSrc: waveform,
+      imageSrc: feedback,
     },
   ];
 
@@ -33,9 +33,11 @@ const UserExp = () => {
       <Wrapper>
         <div className="flex flex-col items-center">
           <div className="md:py-20 py-10 font-spectral flex flex-col items-start">
-            <p className="text-[16px] text-left">Experience the</p>
-            <h2 className="text-[40px] text-[#008080] max-md:text-center">
-              Power of CapnoTrainer® GO
+            <p className="text-[16.331px] text-left font-bold font-spectral leading-normal tracking-wider uppercase">
+              Experience the
+            </p>
+            <h2 className="text-[40px] text-[#008080] max-md:text-center font-spectral font-bold leading-[25px] uppercase">
+              Power of CapnoTrainer<sup>®</sup> GO
             </h2>
           </div>
           <div className="flex max-lg:flex-col items-center justify-between gap-10">
@@ -46,16 +48,18 @@ const UserExp = () => {
               >
                 <Image src={card.imageSrc} alt={card.title} />
                 <div className="px-5 py-2">
-                  <h3 className="font-nunito text-[20px] text-[#008080]">
+                  <h3 className="font-nunito text-[20px] font-bold text-[#008080]">
                     {card.title}
                   </h3>
-                  <p>{card.description}</p>
+                  <p className="font-nunito text-[14px] font-normal leading-normal">
+                    {card.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <Image src={Group} alt="...group" className="mt-10 opacity-30" />
+        <Image src={Group} alt="...group" className="mt-10" />
       </Wrapper>
     </div>
   );

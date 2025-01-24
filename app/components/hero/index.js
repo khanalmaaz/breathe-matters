@@ -2,17 +2,22 @@ import React from "react";
 import Header from "../header.js";
 import Wrapper from "../wrapper/index.js";
 import fegrtg1 from "../../assets/fegrtg1.png";
+import heroelipse2 from "../../assets/hero-elipse-2.png";
 import Image from "next/image.js";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-[#6BB5B5] to-[#008080] w-full  flex flex-col md:gap-20 ">
+    <div className="bg-gradient-to-b from-[#6BB5B5] to-[#008080] w-full  flex flex-col md:gap-20">
       <Wrapper>
         <Header />
         <div className="mt-7 relative flex flex-col gap-12">
-          <h1 className="text-white font-spectral uppercase md:text-[40px] text-[30px] font-bold md:leading-normal leading-8 tracking-wide">
+          <h1 className="text-white font-spectral uppercase md:text-[32px] text-[40px] font-bold md:leading-normal leading-8 tracking-wider">
             <span>
-              Transform Your Life with the Revolutionary CapnoTrainer® GO
+              <span className="text-[40px]">T</span>ransform{" "}
+              <span className="text-[40px]">Y</span>our{" "}
+              <span className="text-[40px]">L</span>ife with the{" "}
+              <span className="text-[40px]">R</span>evolutionary{" "}
+              <span className="text-[40px]">C</span>apnoTrainer<sup>®</sup> GO
             </span>
             <span className="ml-2 inline-flex">
               <svg
@@ -44,27 +49,31 @@ const Hero = () => {
             </span>
           </h1>
           <div className="">
-            <span className="text-white font-nunito md:text-[36px] text-[26px] font-bold leading-none">
+            <span className="text-white font-nunito md:text-[36px] text-[26px] font-[400] leading-none">
               Breathe Smarter, Live Better
             </span>
-            <p className="text-white font-nunito md:text-[16px] text-[12px] font-normal leading-none xl:w-[60%]">
+            <p className="text-white font-nunito md:text-[16px] text-[12px] xl:w-[60%] leading-normal font-[400] opacity-80 mt-3">
               Breathing is more than just an unconscious action—it’s a
-              foundation of health, performance, and emotional well-being. But
-              what if your breathing habits are silently holding you back? Enter
-              the CapnoTrainer® GO, the groundbreaking tool that merges science,
-              psychology, and technology to revolutionize your breathing habits
-              and transform your life.
+              foundation of health, performance, <br /> and emotional
+              well-being. But what if your breathing habits are silently holding
+              you back? <br /> Enter the CapnoTrainer<sup>®</sup> GO, the groundbreaking
+              tool that merges science, psychology, and technology to
+              revolutionize your breathing habits and transform your life.
             </p>
           </div>
           <Image
             src={fegrtg1}
             alt="fegrtg1.png"
-            className="xl:absolute top-12 -right-40"
+            className="xl:absolute top-20 -right-40 z-[999]"
           />
         </div>
       </Wrapper>
-
-      <div className="hero_bottom"></div>
+      <Image
+        src={heroelipse2}
+        alt="...heroelipse2"
+        className="absolute bottom-0 w-full"
+      />
+      <div className="hero_bottom z-50"></div>
     </div>
   );
 };

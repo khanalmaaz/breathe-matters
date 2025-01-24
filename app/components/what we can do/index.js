@@ -9,40 +9,40 @@ const WhatWeCanDo = () => {
   const cardsData = [
     {
       img: stress,
-      title: "Real-Time Monitoring",
+      title: "Eliminate Stress and Anxiety",
       subtitle:
-        "Track your breathing metrics like CO2 concentration, breathing rate, and rhythm.",
+        "Learn to control overbreathing, reduce hypocapnia, and maintain balance in challenging situations.",
     },
     {
       img: mental,
-      title: "Capnogram Visualization",
+      title: "Enhance Mental Clarity and Focus",
       subtitle:
-        "Get instant feedback on your breathing mechanics and see the impact in real-time.",
+        "Boost oxygen and glucose supply to your brain by aligning your breathing mechanics.",
     },
     {
       img: achieve,
-      title: "Custom Learning Plans",
+      title: "Achieve Peak Performance",
       subtitle:
-        "Tailored strategies to help you unlearn bad habits and master new ones.",
+        "Whether you’re giving a presentation, running a marathon, or meditating, experience the benefits of a well-aligned breath.",
     },
     {
       img: physical,
-      title: "Interactive Practicums",
+      title: "Improve Physical Health",
       subtitle:
-        "Experiment with guided breathing challenges to align behavior with physiology.",
+        "Address symptoms like shortness of breath, dizziness, and fatigue by optimizing your acid-base physiology.",
     },
   ];
   return (
     <div className="md:my-32 my-10 ">
-      <h2 className="text-center max-md:text-[26px] diffTheCapnotrainer">
-        What Can the CapnoTrainer®GO Do for You?
+      <h2 className="text-center max-md:text-[26px] diffTheCapnotrainer tracking-wider">
+        What Can the CapnoTrainer<sup>®</sup>GO Do for You?
       </h2>
       <div className="grid grid-cols-4 place-items-center justify-between py-10 max-lg:grid-cols-2 max-sm:grid-cols-1 lg:gap-[100px] gap-10">
         {cardsData?.map((obj, index) => (
           <div key={index} className="w-[288px]">
             <Image src={obj?.img} alt={`...${obj.name}`} />
             <div className="p-5 bg-[#008080] rounded-b-xl">
-              <h3 className="text-white font-nunito text-[20px] font-bold leading-none">
+              <h3 className="text-white font-nunito text-[20px] font-bold leading-normal">
                 {obj?.title}
               </h3>
               <p className="text-white font-nunito text-[16px] font-normal leading-normal">
