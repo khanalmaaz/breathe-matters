@@ -84,7 +84,7 @@ const Success = () => {
           REAL SUCCESS STORIES
         </p>
       </div>
-      <div className="xl:hidden">
+      <div className="xl:hidden my-20">
         <p className="text-center max-md:text-[30px] leading-normal  text-[40px] font-spectral font-bold text-black mt-5">
           REAL SUCCESS STORIES
         </p>

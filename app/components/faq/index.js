@@ -12,7 +12,7 @@ const FAQ = () => {
     questions: [
       {
         question:
-          "Do I need prior experience with breathing exercises to use the CapnoTrainer<sup>®</sup> GO?",
+          "Do I need prior experience with breathing exercises to use the CapnoTrainer® GO?",
         answer:
           "BreatheMatters is a holistic wellness brand dedicated to improving respiratory health and overall well-being. We offer a curated selection of innovative products designed to enhance the quality of your breathing experience.",
       },
