@@ -1,7 +1,11 @@
 import React from "react";
 
-const Wrapper = ({ children }) => {
-  return <div className={`md:px-24 px-5`}>{children}</div>;
+const Wrapper = ({ children, hero }) => {
+  return (
+    <div className={`container mx-auto max-sm:max-w-[380px] 2xl:px-20`}>
+      {children}
+    </div>
+  );
 };
 
 export default Wrapper;

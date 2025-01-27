@@ -23,29 +23,54 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div className="frameParent frameParentBottom">
-      <div className="   from-[#E6F2F2] via-[#E6F2F2] to-transparent opacity-100 md:bg-gradient-to-r md:from-[#E6F2F2] md:via-[#E6F2F2] md:to-transparent md:w-[70%] md:py-24 px-12 py-1">
-        <h2 className="howTheCapnotrainer text-start">
-          How the CapnoTrainer<sup>®</sup> GO Works
-        </h2>
-        <div className="grid grid-cols-2 max-lg:grid-cols-1 max-lg:place-items-center max-lg:justify-center gap-5 text-white my-5 lg:pr-16">
-          {cards?.map((card, index) => (
-            <div
-              key={index}
-              className={`section  ${
-                index % 2 === 0
-                  ? "h-40 bg-[#008080]"
-                  : "h-[182px] bg-[#008080]/70"
-              }`}
-            >
-              <b className="text-white text-[20px] font-bold font-nunito">
-                {card.title}
-              </b>
-              <div className="text-white text-[16px] font-normal font-nunito">
-                {card.description}
+    <div className="frameParentBottom max-w-[1440px] mx-auto border-t-white border">
+      <div className="from-[#E6F2F2] via-[#E6F2F2] to-transparent opacity-100 md:bg-gradient-to-r md:from-[#E6F2F2] md:via-[#E6F2F2] md:to-transparent">
+        <div className="frameParent max-lg:py-10">
+          <div className="lg:w-2/4 lg:p-12 px-5">
+            <h2 className="howTheCapnotrainer lg:text-start text-center">
+              How the CapnoTrainer<sup>®</sup> GO Works
+            </h2>
+            <div className="flex gap-3 pt-6 max-md:flex-col max-md:items-center max-md:justify-center">
+              <div className="flex flex-col gap-3">
+                <div className={`section bg-[#008080]`}>
+                  <b className="text-white text-[20px] font-bold font-nunito">
+                    {cards[0].title}
+                  </b>
+                  <div className="text-white text-[16px] font-normal font-nunito">
+                    {cards[0].description}
+                  </div>
+                </div>
+                <div className={`section bg-[#008080]`}>
+                  <b className="text-white text-[20px] font-bold font-nunito">
+                    {cards[1].title}
+                  </b>
+                  <div className="text-white text-[16px] font-normal font-nunito">
+                    {cards[1].description}
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3">
+                  <div className={`section bg-[#008080]/90`}>
+                    <b className="text-white text-[20px] font-bold font-nunito">
+                      {cards[2].title}
+                    </b>
+                    <div className="text-white text-[16px] font-normal font-nunito">
+                      {cards[2].description}
+                    </div>
+                  </div>
+                  <div className={`section bg-[#008080]/90`}>
+                    <b className="text-white text-[20px] font-bold font-nunito">
+                      {cards[3].title}
+                    </b>
+                    <div className="text-white text-[16px] font-normal font-nunito">
+                      {cards[3].description}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </div>

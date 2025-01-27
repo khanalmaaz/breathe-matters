@@ -7,6 +7,9 @@ import Image from "next/image";
 import Wrapper from "../wrapper";
 
 const FAQ = () => {
+  // const [IsHovered, setIsHovered] = useState(false);
+  const [questionIndex, setQuestionIndex] = useState(null);
+
   const faqData = {
     title: "Frequently Asked Questions",
     questions: [
@@ -25,13 +28,13 @@ const FAQ = () => {
       {
         question: "How do I get started?",
         answer:
-          "Simply order your CapnoTrainer<sup>®</sup> GO, and follow the included guide to begin exploring your breath.",
+          "Simply order your CapnoTrainer® GO, and follow the included guide to begin exploring your breath.",
       },
     ],
   };
-  const [questionIndex, setQuestionIndex] = useState(null);
 
   const handleQuestionAccordian = (index) => {
+    // setIsHovered(true);
     setQuestionIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -47,20 +50,22 @@ const FAQ = () => {
           {faqData?.questions?.map((obj, index) => (
             <div
               key={index}
-              className="border border-[#6BB5B5] p-3 pr-10 rounded-[6px]"
+              className="cursor-pointer border border-[#6BB5B5] p-4 rounded-[6px]"
+              onClick={() => handleQuestionAccordian(index)}
+              // onMouseLeave={() => {
+              //   setIsHovered(false);
+              // }}
             >
               <div className="flex items-center justify-between">
-                <h4 className="text-[16px] text-[#008080] font-semibold font-lucida">
+                <h4 className="text-[20px] text-[#008080] font-semibold font-lucida pl-3">
                   {obj?.question}
                 </h4>
 
                 <Image
                   src={questionIndex === index ? up : down}
+                  // src={IsHovered && questionIndex === index ? up : down}
                   alt="Toggle Arrow"
-                  width={20}
-                  height={20}
-                  className="cursor-pointer"
-                  onClick={() => handleQuestionAccordian(index)}
+                  className="cursor-pointer max-lg:w-[10px] w-[20px]"
                 />
               </div>
               <div
@@ -68,7 +73,9 @@ const FAQ = () => {
                   questionIndex === index ? "max-h-[500px]" : "max-h-0"
                 }`}
               >
-                <p className="text-[16px] text-[#3C3C3C] mt-2">{obj?.answer}</p>
+                <p className="text-[16px] text-[#3C3C3C] px-3 py-5">
+                  {obj?.answer}
+                </p>
               </div>
             </div>
           ))}

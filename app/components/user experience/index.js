@@ -29,11 +29,11 @@ const UserExp = () => {
   ];
 
   return (
-    <div className="bg-[#E6F2F2] md:mt-32 mt-10 flex flex-col items-center">
+    <div className="bg-[#E6F2F2] md:mt-32 mt-10 flex flex-col items-center max-w-[1440px] mx-auto">
       <Wrapper>
         <div className="flex flex-col items-center">
-          <div className="md:py-20 py-10 font-spectral flex flex-col items-start">
-            <p className="text-[16.331px] text-left font-bold font-spectral leading-normal tracking-wider uppercase">
+          <div className="md:py-20 py-10 font-spectral flex flex-col items-start ">
+            <p className="text-[16.331px] max-lg:text-center text-left font-bold font-spectral leading-normal tracking-wider uppercase">
               Experience the
             </p>
             <h2 className="max-md:text-[30px] text-[40px] text-[#008080] max-md:text-center font-spectral font-bold leading-[25px] uppercase">
@@ -59,7 +59,7 @@ const UserExp = () => {
             ))}
           </div>
         </div>
-        <Image src={Group} alt="...group" className="mt-10" />
+        <Image src={Group} alt="...group" className="my-10" />
       </Wrapper>
     </div>
   );

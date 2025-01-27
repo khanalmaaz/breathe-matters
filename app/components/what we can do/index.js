@@ -1,6 +1,6 @@
 import React from "react";
 import stress from "../../assets/Eliminate Stress and Anxiety.png";
-import mental from "../../assets/mental.png";
+import mental from "../../assets/mentalstress.png";
 import achieve from "../../assets/Achieve Peak Performance.png";
 import physical from "../../assets/Improve Physical Health.png";
 import Image from "next/image";
@@ -33,15 +33,22 @@ const WhatWeCanDo = () => {
     },
   ];
   return (
-    <div className="md:my-32 my-10 ">
+    <div className="md:my-32 my-10 max-w-[1245px] mx-auto">
       <h2 className="text-center max-md:text-[26px] diffTheCapnotrainer tracking-wider">
         What Can the CapnoTrainer<sup>®</sup>GO Do for You?
       </h2>
-      <div className="grid grid-cols-4 place-items-center justify-between py-10 max-lg:grid-cols-2 max-sm:grid-cols-1 lg:gap-[100px] gap-10">
+      <div className="grid grid-cols-4 gap-x-6 place-items-center gap-y-10 w-full py-10 max-xl:grid-cols-2 max-sm:grid-cols-1">
         {cardsData?.map((obj, index) => (
-          <div key={index} className="w-[288px]">
-            <Image src={obj?.img} alt={`...${obj.name}`} />
-            <div className="p-5 bg-[#008080] rounded-b-xl">
+          <div
+            key={index}
+            className="w-full max-w-[400px] h-full flex flex-col"
+          >
+            <Image
+              src={obj?.img}
+              alt={`...${obj.name}`}
+              className="w-full aspect-[4/3] object-cover rounded-t-xl"
+            />
+            <div className="p-5 bg-[#008080] rounded-b-xl flex-1 flex flex-col justify-between">
               <h3 className="text-white font-nunito text-[20px] font-bold leading-normal">
                 {obj?.title}
               </h3>

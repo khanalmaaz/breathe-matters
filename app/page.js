@@ -18,13 +18,15 @@ import Order from "./components/order/index.js";
 
 const Home = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <Hero />
+      {/* <Collaborators /> */}
       <Wrapper>
         <Collaborators />
+
         <HiddenPower />
+        <CapnoTrainer />
       </Wrapper>
-      <CapnoTrainer />
       <UserExp />
       <HowWeWork />
       <Wrapper>
@@ -39,7 +41,9 @@ const Home = () => {
       <Order />
       <FAQ />
       <Transform />
-      <Footer />
+      <Wrapper>
+        <Footer />
+      </Wrapper>
     </div>
   );
 };

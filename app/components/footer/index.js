@@ -22,7 +22,7 @@ const socialMedia = [
 
 const Footer = () => {
   return (
-    <>
+    <div className="max-w-[1248px] mx-auto">
       <footer className={styles.footer}>
         <div className={styles["footer-left"]}>
           <Image
@@ -58,7 +58,7 @@ const Footer = () => {
       <div className={styles["footer-copyright"]}>
         © 2024 BreatheMatters. All rights reserved.
       </div>
-    </>
+    </div>
   );
 };
 

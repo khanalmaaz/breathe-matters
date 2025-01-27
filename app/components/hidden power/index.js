@@ -27,12 +27,12 @@ const points = [
 
 const HiddenPower = () => {
   return (
-    <div className="md:my-32 my-10">
-      <h2 className="text-center max-md:text-[26px] tracking-wider diffTheCapnotrainer">
+    <div className="md:my-32 my-10 max-w-[1148px] mx-auto">
+      <h2 className="text-center max-md:text-[26px] tracking-wider font-spectralSC diffTheCapnotrainer">
         Discover the Hidden Power of Your Breath
       </h2>
       <div className="bg-[#E6F2F2] flex mt-5 max-lg:flex-col">
-        <div className="w-[80%] object-contain max-lg:w-full">
+        <div className="w-[80%] object-contain max-lg:w-full lg:max-h-[458px]">
           <Image className="h-full w-full" src={womanyoga} alt="Yoga Woman" />
         </div>
         <div className="flex flex-col justify-between gap-5">
@@ -66,8 +66,11 @@ const HiddenPower = () => {
             <p className="text-white text-[16px] font-[400] text-left px-10 font-nunito">
               Millions of people suffer the consequences of poor breathing
               habits. But you don’t have to be one of them. With the{" "}
-              <span className="font-bold">CapnoTrainer<sup>®</sup> GO</span>, you’ll unlock
-              a scientifically-backed pathway to breathing mastery.
+              <span className="font-bold">
+                CapnoTrainer<sup>®</sup> GO
+              </span>
+              , you’ll unlock a scientifically-backed pathway to breathing
+              mastery.
             </p>
           </div>
         </div>

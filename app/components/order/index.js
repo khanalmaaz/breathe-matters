@@ -9,12 +9,12 @@ import Image from "next/image";
 
 const Order = () => {
   return (
-    <>
+    <div className="container mx-auto max-w-[1440px]">
       <div className="flex items-center justify-between relative max-lg:hidden">
         <Image
           src={person1}
           alt="...person1"
-          className="absolute left-24 bottom-0"
+          className="absolute left-24 bottom-0 w-[40%]"
         />
         <Image
           src={semiCircle}
@@ -84,7 +84,7 @@ const Order = () => {
         </div>
       </div>
 
-      <div className="max-lg:flex max-lg:flex-col hidden bg-[#008080] py-10 px-5">
+      <div className="max-lg:flex max-lg:flex-col hidden bg-[#008080] py-10 pb-0 px-5">
         <h2
           className="text-center max-md:text-[26px] diffTheCapnotrainer "
           style={{
@@ -117,7 +117,7 @@ const Order = () => {
           <Image src={person1} alt="...person1" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

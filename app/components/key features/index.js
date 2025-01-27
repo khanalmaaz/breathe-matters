@@ -33,13 +33,13 @@ const KeyFeatures = () => {
     },
   ];
   return (
-    <div className="md:my-32 my-10 ">
+    <div className="md:my-32 my-10  w-[85%] mx-auto max-w-[1165px]">
       <h2 className="text-center max-md:text-[26px] diffTheCapnotrainer">
         Key Features You’ll Love
       </h2>
-      <div className="grid grid-cols-4 place-items-center justify-between py-10 max-md:grid-cols-2 max-sm:grid-cols-1 lg:gap-[100px] gap-10 ">
+      <div className="grid grid-cols-4 place-items-center justify-center py-10 gap-5 max-md:grid-cols-2 max-sm:grid-cols-1">
         {keyFeaturesData?.map((obj, index) => (
-          <div key={index} className="flex flex-col gap-2 max-md:items-center">
+          <div key={index} className="flex flex-col gap-2 max-md:items-center ">
             <Image src={obj?.icons} alt={`...${obj.name}`} />
             <h3 className="text-[16px] font-bold text-[#101010] leading-normal font-nunito">
               {obj?.title}

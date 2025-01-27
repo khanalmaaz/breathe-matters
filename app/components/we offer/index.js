@@ -40,20 +40,24 @@ const weOfferData = [
 
 const WeOffer = () => {
   return (
-    <div className="my-10 max-md:my-16">
+    <div className="my-10 max-md:my-16 md:my-32 max-w-[1248px] mx-auto">
       <h2 className="text-center max-md:text-[26px] mb-10 tracking-wider diffTheCapnotrainer">
         Who Is the CapnoTrainer<sup>®</sup> GO For?
       </h2>
-      <div className="grid grid-cols-3 gap-6  max-lg:grid-cols-1">
+
+      <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-1">
         {weOfferData.slice(0, 3).map((obj, index) => (
-          <OfferCard
-            key={index}
-            bgImg={obj.img}
-            title={obj.title}
-            subtitle={obj.subtitle}
-          />
+          <div className="w-full max-w-[380px] mx-auto">
+            <OfferCard
+              key={index}
+              bgImg={obj.img}
+              title={obj.title}
+              subtitle={obj.subtitle}
+            />
+          </div>
         ))}
       </div>
+
       <div className="flex gap-6 max-md:flex-col max-md:items-center max-md:w-full mt-6">
         {weOfferData.slice(3).map((obj, index) => (
           <div key={index} className="w-1/2 max-md:w-full">
