@@ -39,14 +39,11 @@ const WhatWeCanDo = () => {
       </h2>
       <div className="grid grid-cols-4 gap-x-6 place-items-center gap-y-10 w-full py-10 max-xl:grid-cols-2 max-sm:grid-cols-1">
         {cardsData?.map((obj, index) => (
-          <div
-            key={index}
-            className="w-full max-w-[400px] h-full flex flex-col"
-          >
+          <div key={index} className="w-full  h-full flex flex-col">
             <Image
               src={obj?.img}
               alt={`...${obj.name}`}
-              className="w-full aspect-[4/3] object-cover rounded-t-xl"
+              className="w-full object-contain rounded-t-xl"
             />
             <div className="p-5 bg-[#008080] rounded-b-xl flex-1 flex flex-col justify-between">
               <h3 className="text-white font-nunito text-[20px] font-bold leading-normal">
