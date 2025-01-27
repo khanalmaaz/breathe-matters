@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/Breathe matters Logo (1).png";
+import Logo from "../../assets/BreathemattersLogo.png";
 import Image from "next/image";
 import heroElipse from "../../assets/hero-elipse.png";
 

@@ -23,7 +23,7 @@ const HowWeWork = () => {
   ];
 
   return (
-    <div className="frameParentBottom max-w-[1440px] mx-auto border-t-white border">
+    <div className="frameParentBottom max-w-[1440px] mx-auto  border">
       <div className="from-[#E6F2F2] via-[#E6F2F2] to-transparent opacity-100 md:bg-gradient-to-r md:from-[#E6F2F2] md:via-[#E6F2F2] md:to-transparent">
         <div className="frameParent max-lg:py-10">
           <div className="lg:w-2/4 lg:p-12 px-5">

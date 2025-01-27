@@ -14,7 +14,7 @@ const Order = () => {
         <Image
           src={person1}
           alt="...person1"
-          className="absolute left-24 bottom-0 w-[40%]"
+          className="absolute left-24 bottom-0 "
         />
         <Image
           src={semiCircle}

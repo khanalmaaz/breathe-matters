@@ -7,7 +7,7 @@ import Image from "next/image.js";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-[#6BB5B5] to-[#008080] hero_Upper max-w-[1440px] mx-auto relative lg:pb-56 flex flex-col md:gap-20">
+    <div className="bg-gradient-to-b from-[#6BB5B5] to-[#008080]  max-w-[1440px] mx-auto relative lg:pb-56 flex flex-col md:gap-20">
       <Wrapper hero={true}>
         <Header />
         <div className="max-lg:flex max-lg:flex-col max-lg:items-end">

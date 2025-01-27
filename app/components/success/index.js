@@ -30,16 +30,17 @@ const Success = () => {
           Real Success Stories
         </h2>
 
-        <div className="max-w-[1440px] mx-auto flex max-lg:flex-col items-center gap-[61px] relative">
+        <div className="max-w-[1440px] mx-auto mt-[-4px] flex max-lg:flex-col items-center gap-[61px] relative">
           {successStories?.map((story, index) => (
             <div
               key={index}
-              className="flex flex-col bg-[#E6F2F2] border border-[#008080] rounded-[10px]"
+              className="flex flex-col bg-[#fff] border border-[#008080] rounded-[10px] gap-4 overflow-hidden"
             >
-              <p className="text-[#008080] rounded-b-[10px] p-5">
+              <p className="text-[#008080]  bg-[#E6F2F2] rounded-b-[16px] p-5 shadow-[0px_10px_10px_-2px_rgba(0,0,0,0.2)]">
                 {story?.quote}
               </p>
-              <div className="flex items-center justify-center bg-white rounded-b-[10px] border-[#008080]">
+
+              <div className="flex items-center justify-center  rounded-b-[10px] border-[#008080] overflow-hidden">
                 <div className="flex items-center gap-5 my-[23px]">
                   <Image src={story?.image} alt={story?.name} />
                   <div>
